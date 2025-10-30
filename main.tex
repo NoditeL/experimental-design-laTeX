@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+\title{Experimental Design, ANOVA, and Multiple Comparisons}
+\author{Generated Report}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Experimental Design}
+Experimental design is the process of planning experiments to ensure that the data collected can provide clear and unbiased answers to the research questions. Three fundamental principles underpin good experimental design: randomization, blocking, and replication. Randomization assigns treatments or experimental runs in a random order to prevent systematic biases and to average out the effects of uncontrolled variables\cite{jmp_randomization}. Blocking involves grouping experimental units that are similar in some way (such as by production batch or day) to reduce the impact of nuisance factors. Replication repeats treatments across multiple experimental units to estimate the experimental error and increase the precision of effect estimates\cite{jmp_randomization}.
+
+\section{Analysis of Variance (ANOVA)}
+Analysis of variance (ANOVA) is a family of statistical methods used to compare the means of two or more groups by analyzing variance components. ANOVA compares the variation between group means with the variation within groups. If the between-group variation is substantially larger than the within-group variation, it suggests that the group means are different. The F-test is used to determine whether the differences among group means are significant\cite{wiki_anova}. ANOVA was developed by the statistician Ronald Fisher and generalizes the two-sample t-test to more than two groups\cite{wiki_anova}.
+
+\section{Multiple Comparisons}
+When an ANOVA indicates that at least one group mean differs from the others, researchers often perform multiple comparisons to identify which groups differ. However, conducting many pairwise comparisons inflates the familywise error rate — the probability of making at least one Type I error across the set of comparisons. Several procedures have been developed to control this error rate. The Bonferroni method adjusts the significance level for each comparison by dividing the overall alpha level by the number of comparisons, providing a simple and general approach\cite{psu_multiple}. Tukey's studentized range procedure is an exact method for all pairwise comparisons when sample sizes are equal; it is more powerful (less conservative) than Bonferroni in that scenario\cite{psu_multiple}. Selecting an appropriate multiple-comparison procedure depends on the comparison objectives and the number of groups involved.
+
+\section{Conclusion}
+Good experimental design ensures that experiments yield reliable conclusions by minimizing biases and variability through randomization, blocking, and replication. ANOVA provides a framework for testing whether group means differ by comparing between-group and within-group variability. When differences are found, multiple comparison procedures like Bonferroni and Tukey help identify specific group differences while controlling the overall error rate.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
